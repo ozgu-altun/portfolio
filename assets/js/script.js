@@ -94,7 +94,7 @@ $(function () {
 let darkBoxVisible = false;
 
 window.addEventListener('load', (event) => {
-	let images = document.getElementById("gallery").querySelectorAll("img");
+	let images = document.querySelectorAll("div.galimg > img");
 	if(images !== null && images !== undefined && images.length > 0) {
 		images.forEach(function(img) {
 			img.addEventListener('click', (evt) => {
